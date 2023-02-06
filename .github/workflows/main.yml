@@ -10,7 +10,7 @@ jobs:
     
     steps:
       - name: Date on Ubuntu!
-        run: echo 'date'
+        run: date
         
   print_date_windows:
     name: Date on Windows!
@@ -18,7 +18,7 @@ jobs:
     
     steps:
       - name: Date on Windows!
-        run: echo 'date'
+        run: date
         
   print_date_macos:
     name: Date on MacOS!
@@ -26,7 +26,7 @@ jobs:
     
     steps:
       - name: Date on MacOS!
-        run: echo 'date'
+        run: date
         
   print_date_ubuntu_1:
     name: Date on Ubuntu-1!
@@ -38,4 +38,4 @@ jobs:
     
     steps:
       - name: Date on Ubuntu-1!
-        run: echo 'date'
+        run: date
