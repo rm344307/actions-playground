@@ -1,0 +1,41 @@
+name: "Print Date"
+
+on:
+  push:
+  
+jobs:
+  print_date_ubuntu:
+    name: Date on Ubuntu!
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Date on Ubuntu!
+        run: echo 'date'
+        
+  print_date_windows:
+    name: Date on Windows!
+    runs-on: windows-latest
+    
+    steps:
+      - name: Date on Windows!
+        run: echo 'date'
+        
+  print_date_macos:
+    name: Date on MacOS!
+    runs-on: macos-latest
+    
+    steps:
+      - name: Date on MacOS!
+        run: echo 'date'
+        
+  print_date_ubuntu_1:
+    name: Date on Ubuntu-1!
+    runs-on: ubuntu-latest
+    needs:
+      - print_date_ubuntu
+      - print_date_windows
+      - print_date_macos
+    
+    steps:
+      - name: Date on Ubuntu-1!
+        run: echo 'date'
