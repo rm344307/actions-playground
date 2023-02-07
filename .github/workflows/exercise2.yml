@@ -16,6 +16,6 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: repositorio_Henrique
+          name: $${{ vars.NOME_ARQUIVO_UPLOAD }}
           path: .
           retention-days: 15
