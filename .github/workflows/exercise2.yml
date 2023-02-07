@@ -1,0 +1,15 @@
+name: "Exercicio 2"
+
+on:
+  push:
+  
+jobs:
+  cria_e_upload_aterfato:
+    name: "Cria artefato e faz upload"
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+      - name: Checkout repository
+        uses: actions/checkout@v3.3.0
